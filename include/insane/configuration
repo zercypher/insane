@@ -1,0 +1,11 @@
+/// @file       insane/configuration
+/// @brief      The Insane engine's configuration header.
+/// @details    This header includes all configuration headers such as platform detection, cpp language standard and feature
+///             detection etc. These form the primary building block of the entire codebase as they are the key to conditional
+///             compilation, language standard / feature selection.
+#ifndef INSANE_CONFIGURATION_INCLUDED
+#define INSANE_CONFIGURATION_INCLUDED
+
+#include "__configuration/macros.hpp"
+
+#endif
