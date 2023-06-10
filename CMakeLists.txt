@@ -11,6 +11,7 @@ project(
     insane-engine
     DESCRIPTION "An insane engine developed and maintained for no reason"
     VERSION ${INSANE_VERSION}
+    LANGUAGES CXX
 )
 
 set(INSANE_PROJECT_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -21,6 +22,9 @@ if(CMAKE_SOURCE_DIR STREQUAL INSANE_PROJECT_DIR)
 else()
     set(INSANE_STANDALONE_BUILD OFF)
 endif()
+
+set(INSANE_INCLUDE_DIR "${INSANE_PROJECT_DIR}/include")
+set(INSANE_LIBRARY_DIR "${INSANE_PROJECT_DIR}/lib")
 
 message(STATUS "Insane engine")
 message(STATUS " \\__Version: ${INSANE_VERSION}")
