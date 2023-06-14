@@ -7,5 +7,7 @@
 #define INSANE_CONFIGURATION_INCLUDED
 
 #include "__configuration/macros.hpp"
+#include "__configuration/platform.hpp"
+#include "__configuration/cpp-language.hpp"
 
 #endif
