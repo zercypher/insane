@@ -54,4 +54,7 @@
 #	define INSANE_MAKE_VERSION(MAJOR, MINOR, PATCHLEVEL) (((MAJOR) << 24) | ((MINOR) << 16) | (PATCHLEVEL))
 #endif
 
+#define INSANE_ENABLE  1
+#define INSANE_DISABLE 0
+
 #endif
