@@ -36,9 +36,10 @@
 #		endif
 #	elif defined(_MSC_VER)
 #		if defined(_MSC_FULL_VER)
-#			define INSANE_CPP_COMPILER_VERSION _MSC_FULL_VER
+#			define INSANE_CPP_COMPILER_VERSION                                                                               \
+				INSANE_MAKE_VERSION(_MSC_FULL_VER / 1000000, (_MSC_FULL_VER % 1000000) / 10000, _MSC_FULL_VER % 10000)
 #		else
-#			define INSANE_CPP_COMPILER_VERSION _MSC_VER
+#			define INSANE_CPP_COMPILER_VERSION INSANE_MAKE_VERSION(_MSC_VER / 10, (_MSC_VER % 10) * 10, 0)
 #		endif
 #	else
 #		define INSANE_CPP_COMPILER_VERSION 0
